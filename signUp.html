@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- In the title, It displays the website name and an icon. -->
+        <title>Mystic Travellers</title>
+        <link rel="icon" href="images/icon.png">
+
+        <!-- Used to access the css -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+
+        <!-- Used to access the script -->
+        <script src="js/registration.js"></script>
+
+        <!-- Navigation bar -->
+        <!-- The user will be able to navigate from one page to another. It highlights the currently active page. -->
+        <header>
+            <div class="navContainer">
+                <nav>
+                    <ul> 
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="leaderboards.html">leaderboards</a></li>
+                        <li><a href="signIn.html">Sign in</a></li>
+                        <li><a class="active" href="signUp.html">Sign up</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Sign up -->
+        <div class="formContainer">
+            <h2>Sign Up</h2>
+
+            
+            <!-- Asks the user to create a username and password. Asks the user to repeat the password to validate whether the user has entered the correct password. -->
+            <!-- Ask the user for extra details such as email and phone. -->
+            <!-- If all the fields have been entered correctly the user will be taken to the sign in page. -->
+            <input class="inputField2" id="username" type="text" name="username" placeholder="Username" required>
+            <br><br>
+            <input class="inputField2" id="email" type="email" name="email" placeholder="Email" required>
+            <br><br>
+            <input class="inputField2" id="phone" type="tel" name="phone" placeholder="Phone"  required>
+            <br><br>
+            <input class="inputField2" id="password" type="password" name="password" placeholder="Password" required>
+            <br><br>
+            <input class="inputField2" id="verifyPassword" type="password" name="verifyPassword" placeholder="Verify Password" required>
+            <p id="errorMessage"> </p>
+            <input class="button" type="submit" onclick="createAccount()" value="Sign up">
+            
+            <!-- Image -->
+            <img class="imageContainer" src="images/WelcomeImage.png" alt="WelcomeImage"/>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- In the title, It displays the website name and an icon. -->
+        <title>Mystic Travellers</title>
+        <link rel="icon" href="images/icon.png">
+
+        <!-- Used to access the css -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <!-- Navigation bar -->
+        <!-- The user will be able to navigate from one page to another. It highlights the currently active page. -->
+        <header>
+            <div class="navContainer">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a class="active" href="leaderboards.html">leaderboards</a></li>
+                        <li><a href="signIn.html">Sign in</a></li>
+                        <li><a href="signUp.html">Sign up</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Leaderboard table -->
+        <!-- This table is used to display the rank of the players. -->
+        <h1>~ Leaderboard Ranking ~</h1>
+        <div id="leaderboardsTable"></div>
+
+        <!-- Used to access the script -->
+        <script src="js/leaderboards.js"></script>
+        
+    </body>
+</html>

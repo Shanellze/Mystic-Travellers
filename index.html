@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- In the title, It displays the website name and an icon. -->
+        <title>Mystic Travellers</title>
+        <link rel="icon" href="images/icon.png">
+
+        <!-- Used to access the css -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <!-- Navigation bar -->
+        <!-- The user will be able to navigate from one page to another. It highlights the currently active page. -->
+        <header>
+            <div class="navContainer">
+                <nav>
+                    <ul> 
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="leaderboards.html">leaderboards</a></li>
+                        <li><a href="signIn.html">Sign in</a></li>
+                        <li><a href="signUp.html">Sign up</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Game screen -->
+        <canvas id="gameCanvas" class="gameContainer"></canvas>
+
+        <!-- Used to access the script -->
+        <script src="js/game.js" type="module"></script>
+        
+        
+    </body>
+</html>

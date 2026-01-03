@@ -1,0 +1,288 @@
+/* Defining the style for all elements */
+* {
+  font-family: 'CustomFont', Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* Styling the header */
+header{
+  background-color: #fff;
+}
+
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Styling the body */
+body {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-color: #e68da0;
+  overflow: hidden;
+  image-rendering: pixelated;
+}
+
+/* Defining a custom font */
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("../fonts/alagard.ttf") format('truetype');
+}
+
+
+
+/* Navigation Bar */
+
+/* Defining the navigation bar */
+.navContainer {
+  width: 100%;
+  font-size: 30px;
+  align-items: center;
+  color: #e68da0;
+}
+
+/* Styling the navigation bar */
+nav ul {
+  width: 100%;
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+/* Aligning the last two items of the nav bar at the end of bar */
+nav li:nth-last-child(2), nav li:nth-last-child(1){
+  float: right;
+}
+
+/* Styling the links of the navigation bar */
+nav a {
+  display: block;
+  float: left;
+  color: #e68da0;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+/* When the user hovers their mouse over a link, it will change the colour of the text to help indicate that the button is clickable with the exception of the 
+current active link */
+nav a:hover:not(.active) {
+  color:#f3acbb;
+}
+
+/* Highlights the link that would usually take the user to the current page */
+nav .active {
+  color: #f06f8b;
+  text-decoration: underline;
+}
+
+
+
+/* Sign in and Sign up page*/
+
+/* Styling the h2 element */
+h2{
+  font-size: 60px; 
+  color: #e68da0;
+  margin: 80px 0px 20px 40px;
+}
+
+/* Styling the p element */
+p{
+  width: 275px; 
+  height: 20px; 
+  margin-top: 10px; 
+  margin-left: 40px; 
+  text-align: center;
+}
+
+/* Styling the p element for the errorMessage id */
+#errorMessage {
+  width: 275px; 
+  height: auto;
+  min-height: 20px;
+  margin-top: 5px; 
+  margin-left: 40px; 
+  padding-bottom: 5px;
+  color: #f24848; 
+  text-align: center;
+}
+
+/* Defining the form container */
+.formContainer {
+  width: 800px;
+  height: 500px;
+  border-radius: 25px;
+  background-color: #FFF;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Defining the image container */
+.imageContainer {
+  object-fit: contain;
+  width: 400px;
+  height: 500px;
+  float: right; 
+  border-radius: 25px;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  border: #000;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+/* Styling the input field */
+.formContainer .inputField1{
+  width: 267px; 
+  height: 30px; 
+  margin-left: 40px; 
+  margin-top: 10px; 
+  font-size: 20px; 
+  padding-left: 8px;
+}
+
+.formContainer .inputField2{
+  width: 267px; 
+  height: 30px; 
+  margin-left: 40px; 
+  font-size: 20px; 
+  padding-left: 8px;
+}
+
+/* When the user selects a field, the box will highlight to indicate which box the user is entering data into */
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=tel]:focus {
+  outline-color: #e68da0;
+}
+
+/* Styling the link */
+.formContainer a:link {
+  color: #e68da0;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.formContainer a:visited {
+  color: #e68da0;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.formContainer a:hover {
+  color: #f06f8b;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.formContainer a:active {
+  color: rgb(249, 227, 31);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* Styling the button */
+.formContainer .button {
+  width: 285px;
+  height: 40px;
+  margin-left: 40px;
+  margin-top: 0px;
+  background-color: #e68da0;
+  color: #FFF;
+  font-size: 20px;
+  border-radius: 25px;
+  border: #FFF;
+}
+
+.formContainer .button:hover {
+  background-color: #f3acbb;
+  color: #fff;
+}
+
+
+
+/* Game page */
+
+/* Defining the game container */
+.gameContainer {
+  width: 1200px;
+  height: 600px;
+  border: 1px solid black; 
+  padding: 0;
+  margin: auto;
+  position: absolute;
+  top: 12%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+
+/* Leaderboards table */
+
+/* Styling the h1 element */
+h1{
+  text-align: center; 
+  color: #fff; 
+  font-size: 70px; 
+  margin: 30px auto;
+}
+
+/* Defining the table */
+#leaderboardsTable {
+  width: 1280px;
+  height: 500px;
+  background-color: #fff;
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-collapse:inherit;
+}
+
+/* Styling the table */
+
+#leaderboardsTable table {
+  width: 100%; /* Make the table fill the container width */
+  border-collapse: collapse;
+}
+
+#leaderboardsTable th, td {
+  text-align: center;
+  font-size: 20px;
+  padding: 8px;
+  height: 70px;
+}
+
+#leaderboardsTable td {
+  color: #e68da0;
+}
+
+#leaderboardsTable th {
+  height: 40px;
+  background-color: #e68da0;
+  color: #fff;
+}
+
+/* Allow the rows to alternate colours, so that it is more visable for the user to see where players are ranked. */
+#leaderboardsTable tr:nth-child(odd) {
+  background-color: #f5f2f2;
+}
