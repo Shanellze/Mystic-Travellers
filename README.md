@@ -5,10 +5,7 @@ Includes account registration/sign-in (stored locally in the browser), a playabl
 
 ![Mystic Travellers Gameplay](images/gamePreview.png)
 
-
----
-
-## Technologies Used
+## Tech Stack
 - **HTML5** – Page structure and canvas rendering
 - **CSS3** – Styling and layout
 - **JavaScript (ES6+)** – Game logic, interactivity, and state management
@@ -18,13 +15,6 @@ Includes account registration/sign-in (stored locally in the browser), a playabl
   - `sessionStorage` for active user sessions
 
 No external frameworks or libraries were used.
-
----
-
-## Tutorials
-- [Pokémon JavaScript Game Tutorial with HTML Canvas](https://www.youtube.com/watch?v=yP5DKzriqXA/)
-
----
 
 ## Approach
 The project was built using a modular and structured approach:
@@ -40,8 +30,6 @@ The project was built using a modular and structured approach:
 
 This approach keeps the project lightweight, easy to understand.
 
----
-
 ## How to Run
 ### Option 1: Open locally
 1. Download/clone the repo
@@ -54,3 +42,6 @@ This approach keeps the project lightweight, easy to understand.
 If you have VS Code:
 1. Install the **Live Server** extension
 2. Right-click `index.html` → **Open with Live Server**
+
+## References
+- [Pokémon JavaScript Game Tutorial with HTML Canvas](https://www.youtube.com/watch?v=yP5DKzriqXA/)
